@@ -12,19 +12,22 @@ html(lang="ru")
         .wrapper
             .container
                 .content
-                    .content__top
-                        button.button try now
-                    .content__center
-                        .offer
-                            span.offer__text  &nbsp;We <span class = "offer__text--red">offer</span> you a <br> &nbsp; free demo account <br>  &nbsp; with <span class = "offer__text--green">$10,000</span> on it!
-                    .content__bottom
-                        .timer
-                            span.timer__top You have just
-                            .timer__center 
-                                span#time 
-                            span.timer__bottom to get the prize!
+                    .offer
+                        .offer__line
+                            .offer__text You winner!
+                            .offer__shadow You winner!
+                        .offer__line
+                            .offer__text $10,000!
+                            .offer__shadow $10,000!
+                    .timer
+                        span#time 5:00
+                    .button
+                        button.button__image(type = "button") Забрать сейчас
+                    .warning 
+                        .warning__text You have just 5 minutes to get the prize!
+                        .warning__shadow You have just 5 minutes to get the prize!
                 .registration
                     button.registration__close(type="button") ✖
                     <iframe class="registration__frame" src="https://olymptrade.com/lands/affiliate-new-form-v2/index.html?inp_color=ff8f14&square=true&text_form_color=255-143-20-0.2&" width="240" height="320"></iframe>
         block scripts
-            script(src='./assets/scripts/index.bundle.js')
+            //- script(src='./assets/scripts/index.bundle.js')

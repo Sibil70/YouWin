@@ -22,18 +22,18 @@ body {
 }
 
 .container {
-    width: 830px;
+    display: flex;
+    align-items: center;
+    width: 675px;
     height: 100vh;
     margin: 0 auto;
-    background: url(../images/bg/circle.png) 50% 50.5% no-repeat;
-    background-size: contain;
     @include widescreen {
-        width: 1660px;
+
     }
     @include tablets {
-        width: 580px;
+
     }
     @include phones {
-        width: 300px;
+
     }
 }

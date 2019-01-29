@@ -1,0 +1,27 @@
+.warning {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 1.42rem;
+    font-family: 'panton';
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    position:relative;
+}
+.warning__text {
+    position: absolute;
+    color:transparent;
+    background-color: #ffeece;
+    background-image: linear-gradient(top, #fede78 3%,#fd9e32 72%,#f78307 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index:1;
+}
+.warning__shadow{
+    position: absolute;
+    color:#d25902;
+    top:2px;
+}

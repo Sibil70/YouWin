@@ -1,37 +1,31 @@
 .button {
-    background: url('../images/bg/button_bg.svg') 0% 100% no-repeat;
+    
+    @include widescreen {
+
+    }
+    @include tablets {
+
+    }
+    @include phones {
+
+    }
+}
+.button__image{
+    padding:25px;
+    font-size:50px;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #ffbf3c; // Old browsers
+    background-image:linear-gradient(top, #ffbf3c 0%, #ff2c14 27%, #ff2c14 76%,#ffbf3c 100%);
+    border-radius:30px;
     border: none;
-    width: 455px;
-    height: 210px;
-    padding: 0;
-    font-family: 'lemonmilk';
-    font-size: 70px;
-    color: #dfdada;
+    transition: transform 0.3s;
     cursor: pointer;
-    transition: transform 0.3;
-    text-shadow: 0px 1px 2px grey;
+   
     &:focus {
         outline: none;
     }
     &:active {
         transform: scale(0.95)
-    }
-    @include widescreen {
-        width: 910px;
-        height: 420px;
-        font-size: 70px;
-    }
-    @include tablets {
-        width: 311px;
-        height: 135px;
-        font-size: 48px;
-        padding-bottom: 10px;
-    }
-    @include phones {
-        width: 161px;
-        height: 70px;
-        font-size: 25px;
-        padding-bottom: 5px;
-        padding-right: 3px;
     }
 }

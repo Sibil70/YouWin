@@ -1,23 +1,17 @@
 
 @font-face {
-    font-family: 'centurygothic';
-    src: url('../fonts/centurygothic-bold-webfont.woff2') format('woff2'),
-         url('../fonts/centurygothic-bold-webfont.woff') format('woff');
+    font-family: 'panton';
+    src: url('../fonts/panton_black_caps.woff2') format('woff2'),
+         url('../fonts/panton_black_caps.woff') format('woff');
     font-weight: 700;
     font-style: bold;
 }
 
 @font-face {
-    font-family: 'compact';
-    src: url('../fonts/compactbt_black-webfont.woff2') format('woff2'),
-         url('../fonts/compactbt_black-webfont.woff') format('woff');
+    font-family: 'pantonNarrow';
+    src: url('../fonts/panton_narrow_black_caps.woff2') format('woff2'),
+         url('../fonts/panton_narrow_black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
-
-@font-face {
-    font-family: 'lemonmilk';
-    src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
-         url('../fonts/lemonmilk-webfont.woff') format('woff');
-}
