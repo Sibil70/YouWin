@@ -3,8 +3,10 @@
     background-color: rgba(0, 0, 0, 0.0);
     z-index: 2;
     width:63%;
-    height:50%;
+    height:45%;
     align-self:flex-end;
+    margin-top:1em;
+
 
     &__frame {
         width:100%;
@@ -13,6 +15,7 @@
     }
     @include phones {
         position:absolute;
+        bottom:0;
         width:240px;
         height:320px;
     }
