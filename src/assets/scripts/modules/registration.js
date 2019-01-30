@@ -1,29 +1,24 @@
 var btn = document.querySelector(".button"),
     closeReg = document.querySelector(".registration__close"),
     regForm = document.querySelector(".registration"),
-    iFrame = document.querySelector(".registration__frame");
+    warning = document.querySelector('.warning__text'),
+    content = document.querySelector('.content');
     
-var changePosition = function() {
-        var framePosition = iFrame.getBoundingClientRect(),
-            top = framePosition.top,
-            right = framePosition.left;
-
-        closeReg.style.top = top + "px";
-        closeReg.style.right = right + "px";
-    };
-
 btn.addEventListener("click", function(e) {
     e.preventDefault;
     regForm.style.display = "block";
-
-    changePosition();
+    btn.style.display = "none";
+    warning.style.color = "#fff";
+    if (regForm.style.position = "absolute") {
+        content.firstElementChild.style.position ="absolute";
+        content.firstElementChild.style.top ="5%";
+    }
 });
 
 regForm.addEventListener("click", function(e) {
     e.preventDefault;
     regForm.style.display = "none";
+    btn.style.display = "block";
+    warning.style.color = "transparent";
+    content.firstElementChild.style.position ="initial";
 });
-
-window.onresize = function() {
-    changePosition();
-};

@@ -1,14 +1,14 @@
 .timer {
-    font-size: 56px;
-    margin-top:60px;
+    font-size: 3.5em;
+    margin-top:1.875em;
     @include widescreen {
-
+        font-size: 5.5em;
     }
     @include tablets {
 
     }
     @include phones {
-
+        margin-top:1em;
     }
 }
 

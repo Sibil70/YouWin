@@ -1,27 +1,19 @@
 .registration {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    &__close {
-        position: absolute;
-        z-index: 1;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        &:focus {
-            outline: none;
-        }
-    }
+    display:none;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 2;
+    width:63%;
+    height:50%;
+    align-self:flex-end;
+
     &__frame {
+        width:100%;
+        height:100%;
         border: transparent;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    }
+    @include phones {
+        position:absolute;
+        width:240px;
+        height:320px;
     }
 }

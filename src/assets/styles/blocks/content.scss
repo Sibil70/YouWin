@@ -1,50 +1,21 @@
 .content {
     font-family: 'panton', Helvetica, sans-serif;
+    font-size:12px;
     text-align: center;
     text-transform: uppercase;
     color:#fff;
     display: flex;
-    flex-direction: column;
+    flex-wrap:wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
+    justify-content: center;
+    margin-top:1.4em;
     width:100%;
+    height: 100%;
     
-
     @include widescreen {
-        
-    }
-    @include tablets {
-       
+        font-size:18px;
     }
     @include phones {
-        
-    }
-}
-
-
-.timer {
-   
-    @include widescreen {
-      
-    }
-    @include tablets {
-     
-    }
-    @include phones {
-       
-    }
-}
-
-.button {
- 
-    @include widescreen {
-        
-    }
-    @include tablets {
-
-    }
-    @include phones {
-
+        font-size: 6px;
     }
 }

@@ -8,8 +8,6 @@ html {
 
 body {
     box-sizing: border-box;
-    line-height: 1.42;
-    color: $text-color;
 }
 
 .wrapper {
@@ -18,7 +16,7 @@ body {
     min-height: 100%;
     position: relative;
     background: url(../images/bg/bg_coins.png) center center no-repeat, url(../images/bg/bg.jpg) center center no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%, cover;
 }
 
 .container {
@@ -27,13 +25,15 @@ body {
     width: 675px;
     height: 100vh;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
     @include widescreen {
-
+        width:900px;
     }
     @include tablets {
 
     }
     @include phones {
-
+        width:300px;
     }
 }

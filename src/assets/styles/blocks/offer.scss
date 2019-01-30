@@ -4,40 +4,35 @@
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    font-size: 6.5625rem;
     position:relative;
-    
-    @include widescreen {
-       
-    }
-
-    @include tablets {
-       
-    }
-    @include phones {
-       
-    }
 }
 .offer__line{
+    font-size: 6em;
     position: relative;
     width:100%;
-    height:1.42em;
-    display: flex;
-    justify-content:center;
+    text-align: center;
     white-space: nowrap;
+    @include widescreen {
+        font-size: 8em;
+    }
+}
+.offer__line_big{
+    font-size:8em;
+    @include widescreen{
+        font-size:12em;
+    }
 }
 .offer__text {
-    position: absolute;
-    color:transparent;
-    background-color: #ffeece;
-    background-image: linear-gradient(top, #ffeece 3%,#fd9e32 72%,#ffa439 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#d25902;
     z-index:1;
 }
 .offer__shadow{
+    background-image: linear-gradient(top, #ffeece 24%,#fd9e32 72%,#ffa439 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: absolute;
-    color:#d25902;
-    top:5px;
+    left:50%;
+    transform:translate(-50%);
+    top:-0.05em;
 }
