@@ -24,12 +24,13 @@
     height:1.42em;
     display: flex;
     justify-content:center;
+    white-space: nowrap;
 }
 .offer__text {
     position: absolute;
     color:transparent;
     background-color: #ffeece;
-    background-image: linear-gradient(top, #ffeece 3%,#ffb95c 72%,#ffa439 100%);
+    background-image: linear-gradient(top, #ffeece 3%,#fd9e32 72%,#ffa439 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -38,5 +39,5 @@
 .offer__shadow{
     position: absolute;
     color:#d25902;
-    top:2px;
+    top:5px;
 }

@@ -4,11 +4,12 @@
     width:100%;
     height: 1.42rem;
     font-family: 'panton';
-    font-size: 15px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     position:relative;
+    margin-top: 25px;
 }
 .warning__text {
     position: absolute;
@@ -22,6 +23,7 @@
 }
 .warning__shadow{
     position: absolute;
-    color:#d25902;
-    top:2px;
+    color: #cccccc80;
+    top: 3px;
+    text-shadow: 0px 5px 20px grey
 }

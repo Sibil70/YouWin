@@ -1,5 +1,5 @@
 .button {
-    
+    margin-top: 70px;
     @include widescreen {
 
     }
@@ -11,17 +11,21 @@
     }
 }
 .button__image{
-    padding:25px;
+    padding:25px 60px;
     font-size:50px;
     text-transform: uppercase;
     color:#fff;
-    background-color: #ffbf3c; // Old browsers
-    background-image:linear-gradient(top, #ffbf3c 0%, #ff2c14 27%, #ff2c14 76%,#ffbf3c 100%);
+    background-color: #ffbf3c; // Old browsers radial-gradient(at top, Turquoise, Azure)
+    background-image:radial-gradient(at top, #ffbf3c -20%,#ff2c14 95%);
     border-radius:60px;
     border: none;
+    border-bottom:  1px solid #ff2c14;
     transition: transform 0.3s;
     cursor: pointer;
-   
+    box-shadow: 0px 4px 8px 0px #8b6945;
+
+
+
     &:focus {
         outline: none;
     }
