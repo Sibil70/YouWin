@@ -1,6 +1,6 @@
 GitPages
 
-https://sibil70.github.io/DDBanner/build/
+https://sibil70.github.io/YouWin/build/
 
 Как установить проект
 
