@@ -1,24 +1,25 @@
 .button {
     margin-top: 1em;
-    font-size:3.125em;
+    font-size: 3.125em;
     @include widescreen {
-        font-size:5.125em;
+        font-size: 5.125em;
     }
     @include phones {
         margin-top: 0.4em;
-        font-size:3.125em;
+        font-size: 3.125em;
     }
 }
-.button__image{
-    padding:0.5625em 1.25em;
+
+.button__image {
+    padding: 0.5625em 1.25em;
     white-space: nowrap;
     text-transform: uppercase;
-    color:#fff;
-    background-color: #ffbf3c; // Old browsers radial-gradient(at top, Turquoise, Azure)
-    background: radial-gradient(at top, #ffbf3c -20%,#f23322 95%);
-    border-radius:3.75em;
+    color: #fff;
+    background-color: #ffbf3c; // Old browsers
+    background: radial-gradient(at top, #ffbf3c -20%, #f23322 95%);
+    border-radius: 3.75em;
     border: none;
-    border-bottom:  1px solid #f23322;
+    border-bottom: 1px solid #f23322;
     transition: transform 0.3s;
     cursor: pointer;
     box-shadow: 0px 4px 8px 0px #8b6945;
@@ -28,11 +29,11 @@
     &:active {
         transform: scale(0.95)
     }
-    @include widescreen{
+    @include widescreen {
         border-radius: 3.75em;
     }
     @include phones {
         border-radius: 2em;
-        padding:0.5625em 1.75em;
+        padding: 0.5625em 1.75em;
     }
 }

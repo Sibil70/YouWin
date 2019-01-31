@@ -1,38 +1,42 @@
 .offer {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    position:relative;
+    position: relative;
 }
-.offer__line{
+
+.offer__line {
     font-size: 6em;
     position: relative;
-    width:100%;
+    width: 100%;
     text-align: center;
     white-space: nowrap;
     @include widescreen {
         font-size: 8em;
     }
 }
-.offer__line_big{
-    font-size:8em;
-    @include widescreen{
-        font-size:12em;
+
+.offer__line_big {
+    font-size: 8em;
+    @include widescreen {
+        font-size: 12em;
     }
 }
+
 .offer__text {
-    color:#d25902;
-    z-index:1;
+    color: #d25902;
+    z-index: 1;
 }
-.offer__shadow{
-    background-image: linear-gradient(top, #ffeece 24%,#fd9e32 72%,#ffa439 100%);
+
+.offer__shadow {
+    background-image: linear-gradient(top, #ffeece 24%, #fd9e32 72%, #ffa439 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
-    left:50%;
-    transform:translate(-50%);
-    top:-2px;
+    left: 50%;
+    transform: translate(-50%);
+    top: -2px;
 }

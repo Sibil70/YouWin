@@ -12,22 +12,22 @@ html(lang="ru")
         .wrapper
             .container
                 .content
-                    .banner
-                        .offer
-                            .offer__line
-                                .offer__text You winner!
-                                .offer__shadow You winner!
-                            .offer__line.offer__line_big
-                                .offer__text $10,000!
-                                .offer__shadow $10,000!
-                        .timer
-                            span#time 05:00
-                        .button
-                            button.button__image(type = "button") Забрать сейчас
-                        .warning 
-                            .warning__text You have just 5 minutes to get the prize!
-                            .warning__shadow You have just 5 minutes to get the prize!
-                    .registration
-                        <iframe class="registration__frame" src="https://olymptrade.com/lands/affiliate-new-form-v2/index.html?inp_color=ff8f14&square=true&text_form_color=255-143-20-0.2&" ></iframe>
+                    .offer
+                        .offer__line
+                            .offer__text You winner!
+                            .offer__shadow You winner!
+                        .offer__line.offer__line_big
+                            .offer__text $10,000!
+                            .offer__shadow $10,000!
+                    .timer
+                        span#time 05:00
+                    .button
+                        button.button__image(type = "button") Забрать сейчас
+                    .warning 
+                        .warning__text You have just 5 minutes to get the prize!
+                        .warning__shadow You have just 5 minutes to get the prize!
+                .registration
+                    button.registration__close(type="button") ✖
+                    <iframe class="registration__frame" src="https://olymptrade.com/lands/affiliate-new-form-v2/index.html?inp_color=ff8f14&square=true&text_form_color=255-143-20-0.2&" width="240px" height="320px"></iframe>
         block scripts
             script(src='./assets/scripts/index.bundle.js')
